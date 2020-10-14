@@ -5,24 +5,23 @@
 #                                                     +:+ +:+         +:+      #
 #    By: vdaemoni <vdaemoni@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2020/07/23 17:28:03 by vdaemoni          #+#    #+#              #
-#    Updated: 2020/07/23 17:28:03 by vdaemoni         ###   ########.fr        #
+#    Created: 2020/07/31 13:48:33 by vdaemoni          #+#    #+#              #
+#    Updated: 2020/07/31 13:48:33 by vdaemoni         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = FDF
+NAME = fdf
 
 CC = gcc
-#FLAGS = -Wall -Werror -Wextra -O3
+FLAGS = -Wall -Werror -Wextra
 
 SRC_D = ./src/
-SRC =	$(SRC_D)fractol.c \
-		$(SRC_D)calc_fraks.c \
-		$(SRC_D)colorize.c \
-		$(SRC_D)drawing.c \
-		$(SRC_D)kontrol.c \
-		$(SRC_D)mauz.c \
-		$(SRC_D)usag.c
+SRC =	$(SRC_D)main.c \
+		$(SRC_D)helpers.c \
+		$(SRC_D)paintin.c \
+		$(SRC_D)work.c \
+		$(SRC_D)keysand.c \
+		$(SRC_D)noniso.c
 
 OBJ_D = ./obj/
 OBJ = $(SRC:$(SRC_D)%.c=$(OBJ_D)%.o)
